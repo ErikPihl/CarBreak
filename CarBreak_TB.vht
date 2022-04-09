@@ -52,14 +52,14 @@ signal break   : std_logic; -- Bromsar bilen.
 -- signaler med samma namn för simulering.
 ----------------------------------------------------------------------------------------------
 component CarBreak is
-	port
-	(
-		driver  : in std_logic; -- Bromssignal från förare.
-		camera  : in std_logic; -- Indikerar större föremål framför bilen.
-		radar   : in std_logic; -- Indikerar att ett föremål närmar sig bilen.
-		ADAS_OK : in std_logic; -- Indikerar att ADAS-systemet är okej.
-		break   : out std_logic -- Bromsar bilen.							
-	);
+   port
+   (
+	driver  : in std_logic; -- Bromssignal från förare.
+	camera  : in std_logic; -- Indikerar större föremål framför bilen.
+	radar   : in std_logic; -- Indikerar att ett föremål närmar sig bilen.
+	ADAS_OK : in std_logic; -- Indikerar att ADAS-systemet är okej.
+	break   : out std_logic -- Bromsar bilen.		
+   );
 end component;
 
 begin
